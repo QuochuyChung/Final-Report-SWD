@@ -1,0 +1,209 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="legacyvault-component" name="Component Diagram">
+    <mxGraphModel dx="1210" dy="952" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fontColor=#0f172a;" value="LEGACYVAULT – COMPONENT DIAGRAM" vertex="1">
+          <mxGeometry height="50" width="1200" x="650" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=15;fontColor=#475569;" value="Digital Legacy Management and Asset Handover Architecture" vertex="1">
+          <mxGeometry height="30" width="1000" x="750" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="clientBoundary" parent="1" style="swimlane;html=1;rounded=1;startSize=36;horizontal=1;fillColor=#f8fafc;strokeColor=#94a3b8;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#334155;" value="Client Applications" vertex="1">
+          <mxGeometry height="170" width="2000" x="250" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="ownerPortal" parent="clientBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#0f172a;" value="Vault Owner Portal&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Web / Mobile Application&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="110" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="stakeholderPortal" parent="clientBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#0f172a;" value="Executor &amp; Beneficiary Portal&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Web / Mobile Application&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="785" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="adminPortal" parent="clientBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#fee2e2;strokeColor=#dc2626;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#0f172a;" value="Administration Portal&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Web Application&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="430" x="1460" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=30;fillColor=#ede9fe;strokeColor=#7c3aed;strokeWidth=3;fontSize=19;fontStyle=1;fontColor=#1e1b4b;" value="API Gateway&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Request Routing · Authentication · Rate Limiting&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="680" x="910" y="335" as="geometry" />
+        </mxCell>
+        <mxCell id="coreBoundary" parent="1" style="swimlane;html=1;rounded=1;startSize=42;horizontal=1;fillColor=#f8fafc;strokeColor=#475569;strokeWidth=2;fontSize=18;fontStyle=1;fontColor=#0f172a;" value="LegacyVault Backend Services" vertex="1">
+          <mxGeometry height="700" width="1900" x="180" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="identity" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#0f172a;" value="Identity &amp; Access Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Authentication · RBAC · OTP / eKYC&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="80" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="vault" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#cffafe;strokeColor=#0891b2;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#083344;" value="Vault Management Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Assets · Documents · Encryption&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="520" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="orchestrator" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=3;fontSize=16;fontStyle=1;fontColor=#451a03;" value="Check-In &amp; Handover Orchestrator&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Dead Man&#39;s Switch · Workflow Coordination&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="420" x="960" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="adminService" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#fee2e2;strokeColor=#dc2626;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#450a0a;" value="Administration Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Users · Roles · Policies · Backup&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="1430" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="stakeholder" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#052e16;" value="Executor &amp; Beneficiary Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Assignments · Permissions · Status&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="80" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="legal" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#f3e8ff;strokeColor=#9333ea;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#3b0764;" value="Legal Verification Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Death Certificate · Legal Approval&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="520" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="notification" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#0c4a6e;" value="Notification Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Check-In · Alerts · Handover Messages&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="420" x="960" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="coreBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=28;fillColor=#e2e8f0;strokeColor=#475569;strokeWidth=2;fontSize=16;fontStyle=1;fontColor=#0f172a;" value="Audit &amp; Monitoring Service&lt;br&gt;&lt;font style=&quot;font-size:12px;font-weight:normal;&quot;&gt;Audit Trail · Security Alerts · Health&lt;/font&gt;" vertex="1">
+          <mxGeometry height="105" width="390" x="1430" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="dataBoundary" parent="1" style="swimlane;html=1;rounded=1;startSize=36;horizontal=1;fillColor=#f8fafc;strokeColor=#94a3b8;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#334155;" value="Data Stores" vertex="1">
+          <mxGeometry height="230" width="1900" x="180" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="userDb" parent="dataBoundary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontSize=15;fontStyle=1;" value="User &amp; RBAC Database" vertex="1">
+          <mxGeometry height="115" width="320" x="90" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vaultStore" parent="dataBoundary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#cffafe;strokeColor=#0891b2;strokeWidth=2;fontSize=15;fontStyle=1;" value="Encrypted Vault Repository" vertex="1">
+          <mxGeometry height="115" width="340" x="535" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="auditStore" parent="dataBoundary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e2e8f0;strokeColor=#475569;strokeWidth=2;fontSize=15;fontStyle=1;" value="Immutable Audit Log Store" vertex="1">
+          <mxGeometry height="115" width="340" x="1008" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="backupStore" parent="dataBoundary" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fee2e2;strokeColor=#dc2626;strokeWidth=2;fontSize=15;fontStyle=1;" value="Encrypted Backup Storage" vertex="1">
+          <mxGeometry height="115" width="330" x="1480" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="externalBoundary" parent="1" style="swimlane;html=1;rounded=1;startSize=36;horizontal=1;fillColor=#fff7ed;strokeColor=#f97316;strokeWidth=2;fontSize=17;fontStyle=1;fontColor=#7c2d12;" value="External Services" vertex="1">
+          <mxGeometry height="700" width="320" x="2130" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="otpProvider" parent="externalBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=25;fillColor=#ffedd5;strokeColor=#f97316;strokeWidth=2;fontSize=15;fontStyle=1;" value="OTP / eKYC Provider" vertex="1">
+          <mxGeometry height="95" width="250" x="35" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="notaryProvider" parent="externalBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=25;fillColor=#f3e8ff;strokeColor=#9333ea;strokeWidth=2;fontSize=15;fontStyle=1;" value="Notary / Legal Authority" vertex="1">
+          <mxGeometry height="95" width="250" x="35" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="messageProvider" parent="externalBoundary" style="shape=component;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;spacingLeft=25;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=2;fontSize=15;fontStyle=1;" value="Email / SMS / Push Provider" vertex="1">
+          <mxGeometry height="95" width="250" x="35" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cbd5e1;dashed=1;fontSize=13;fontColor=#475569;align=left;spacingLeft=14;" value="UML dependency: dashed arrow points to the component being used" vertex="1">
+          <mxGeometry height="75" width="320" x="2130" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="e-owner-api" edge="1" parent="1" source="ownerPortal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#2563eb;strokeWidth=2;" target="api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-stake-api" edge="1" parent="1" source="stakeholderPortal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#16a34a;strokeWidth=2;" target="api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-admin-api" edge="1" parent="1" source="adminPortal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#dc2626;strokeWidth=2;" target="api" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-api-identity" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#64748b;strokeWidth=2;exitX=0.08;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="identity" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-api-vault" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#64748b;strokeWidth=2;exitX=0.36;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="vault" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-api-orchestrator" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#64748b;strokeWidth=2;exitX=0.64;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="orchestrator" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-api-admin" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#64748b;strokeWidth=2;exitX=0.92;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="adminService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-orch-stake" edge="1" parent="1" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#d97706;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#ffffff;exitX=0.35;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="stakeholder" value="resolve assignments">
+          <mxGeometry relative="1" x="-0.55" y="-14" as="geometry">
+            <Array as="points">
+              <mxPoint x="1285" y="865" />
+              <mxPoint x="455" y="865" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-orch-legal" edge="1" parent="1" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#d97706;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#ffffff;exitX=0.45;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="legal" value="request verification">
+          <mxGeometry relative="1" x="-0.05" y="-14" as="geometry">
+            <Array as="points">
+              <mxPoint x="1329" y="915" />
+              <mxPoint x="895" y="915" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-orch-notify" edge="1" parent="1" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#d97706;strokeWidth=2;fontSize=12;" target="notification" value="send check-in / alert">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-orch-vault" edge="1" parent="1" source="orchestrator" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#d97706;strokeWidth=2;fontSize=12;exitX=0.65;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="vault" value="release authorized assets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1415" y="815" />
+              <mxPoint x="895" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-identity-userdb" edge="1" parent="1" source="identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#2563eb;strokeWidth=2;fontSize=12;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" target="userDb" value="read / write identities">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="692" />
+              <mxPoint x="220" y="1265" />
+              <mxPoint x="334" y="1265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-stake-userdb" edge="1" parent="1" source="stakeholder" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#16a34a;strokeWidth=2;fontSize=12;" target="userDb" value="read assignments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-vault-store" edge="1" parent="1" source="vault" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#0891b2;strokeWidth=2;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.65;entryY=0;entryDx=0;entryDy=0;" target="vaultStore" value="encrypted read / write">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1110" y="692" />
+              <mxPoint x="1110" y="1265" />
+              <mxPoint x="921" y="1265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-audit-store" edge="1" parent="1" source="audit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#475569;strokeWidth=2;fontSize=12;" target="auditStore" value="append audit events">
+          <mxGeometry relative="1" x="0.1369" y="10" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="1360" y="1017.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-admin-backup" edge="1" parent="1" source="adminService" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#dc2626;strokeWidth=2;fontSize=12;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.65;entryY=0;entryDx=0;entryDy=0;" target="backupStore" value="manage backup">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2050" y="692" />
+              <mxPoint x="2050" y="1265" />
+              <mxPoint x="1875" y="1265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-api-audit" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#475569;strokeWidth=2;fontSize=12;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="audit" value="publish request events">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2030" y="410" />
+              <mxPoint x="2030" y="1018" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-identity-otp" edge="1" parent="1" source="identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#f97316;strokeWidth=2;fontSize=12;fontColor=#ffffff;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="otpProvider" value="OTP / identity verification">
+          <mxGeometry relative="1" x="0.35" y="-16" as="geometry">
+            <Array as="points">
+              <mxPoint x="455" y="490" />
+              <mxPoint x="2100" y="490" />
+              <mxPoint x="2100" y="712" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-legal-notary" edge="1" parent="1" source="legal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#9333ea;strokeWidth=2;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="notaryProvider" value="legal document verification">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="895" y="1170" />
+              <mxPoint x="2100" y="1170" />
+              <mxPoint x="2100" y="912" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-notify-provider" edge="1" parent="1" source="notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;dashPattern=8 4;endArrow=open;endFill=0;strokeColor=#0284c7;strokeWidth=2;fontSize=12;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="messageProvider" value="email / SMS / push delivery">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="1210" />
+              <mxPoint x="2100" y="1210" />
+              <mxPoint x="2100" y="1112" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
