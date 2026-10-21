@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="component-legacyvault" name="Component Diagram">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="LEGACYVAULT – COMPONENT DIAGRAM" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#CC00CC;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-20" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="web" value="Web Application" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="850" y="40" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="server" value="LegacyVault Server (API)" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="620" y="200" width="760" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="db" value="Database" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ident" value="Identity &amp;amp; Access Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vault" value="Vault Management Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="620" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="legal" value="Legal Verification Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="910" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="notif" value="Notification Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hand" value="Check-In &amp;amp; Handover Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" value="Audit &amp;amp; Administration Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1780" y="420" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="otp" value="OTP / eKYC Provider" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#f5f5f5;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="330" y="640" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sign" value="Digital Signature / e-Notary Service" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#f5f5f5;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="910" y="640" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mail" value="Email / SMS / Push Provider" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=middle;whiteSpace=wrap;html=1;fontStyle=1;fontSize=13;jettyWidth=20;jettyHeight=10;strokeWidth=1.5;shadow=1;fillColor=#f5f5f5;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="640" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" value="+Send request" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="web" target="server">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" value="+Access data" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.06;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" value="+Authenticate user" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.22;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="ident">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep4" value="+Manage assets" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.4;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="vault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep5" value="+Verify documents" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.6;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="legal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep6" value="+Manage handover" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.78;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="hand">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep7" value="+Log and configure" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.94;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="server" target="audit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep8" value="+Send alert" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="legal" target="notif">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep9" value="+Send alert" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hand" target="notif">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep10" value="+Verify OTP / eKYC" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ident" target="otp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep11" value="+Verify and sign" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="legal" target="sign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep12" value="+Deliver message" style="html=1;dashed=1;endArrow=open;endFill=0;endSize=10;strokeWidth=1.5;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="notif" target="mail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="Dashed arrow: dependency, points to the component being used. Grey components: external services." style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#555555;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="780" width="900" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
