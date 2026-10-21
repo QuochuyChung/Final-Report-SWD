@@ -1,3 +1,4 @@
+<mxfile host="app.diagrams.net">
 <diagram id="seq-legacyvault" name="Sequence Diagram">
 <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2440" pageHeight="2126" math="0" shadow="0">
 <root>
@@ -100,3 +101,4 @@
 </root>
 </mxGraphModel>
 </diagram>
+</mxfile>

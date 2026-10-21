@@ -1,3 +1,4 @@
+<mxfile host="app.diagrams.net">
 <diagram id="Use Case - LegacyVault" name="Use Case Diagram">
 <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1700" math="0" shadow="0">
 <root>
@@ -79,3 +80,4 @@
 </root>
 </mxGraphModel>
 </diagram>
+</mxfile>
