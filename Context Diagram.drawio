@@ -1,222 +1,198 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
-  <diagram id="legacyvault-context" name="Context Diagram">
-    <mxGraphModel dx="2269" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="legacyvault-context-v2" name="Context Diagram">
+    <mxGraphModel dx="2928" dy="1242" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1350" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#0f172a;" value="LEGACYVAULT – SYSTEM CONTEXT DIAGRAM" vertex="1">
-          <mxGeometry height="45" width="900" x="450" y="25" as="geometry" />
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontColor=#1F2937;" value="&lt;b&gt;LegacyVault – System Context Diagram&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="900" x="650" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#475569;" value="External Entities and Data Flows" vertex="1">
-          <mxGeometry height="30" width="500" x="650" y="70" as="geometry" />
+        <mxCell id="subtitle" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontColor=#4B5563;" value="External actors, external services, and directed data flows" vertex="1">
+          <mxGeometry height="30" width="800" x="700" y="65" as="geometry" />
         </mxCell>
-        <mxCell id="system" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#1d4ed8;strokeColor=#1e3a8a;strokeWidth=3;fontColor=#ffffff;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;rotation=0;" value="&lt;div style=&quot;font-size:16px;margin-bottom:8px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-size: 22px;&quot;&gt;LegacyVault System&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size:14px;font-weight:400;margin-top:8px;&quot;&gt;Digital Legacy Management and Asset Handover&lt;/div&gt;" vertex="1">
-          <mxGeometry height="300" width="300" x="710" y="620" as="geometry" />
+        <mxCell id="system" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=3;fillColor=#9DC3E6;strokeColor=#4472C4;fontColor=#111827;fontSize=21;align=center;verticalAlign=middle;" value="&lt;b&gt;LEGACYVAULT SYSTEM&lt;/b&gt;&lt;br&gt;&lt;br&gt;Digital legacy management&lt;br&gt;Dead Man’s Switch&lt;br&gt;Legal verification and vault unlock&lt;br&gt;Per-asset handover tracking" vertex="1">
+          <mxGeometry height="700" width="700" x="750" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="Vault Owner" vertex="1">
-          <mxGeometry height="90" width="250" x="130" y="370" as="geometry" />
+        <mxCell id="owner" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" value="&lt;b&gt;Vault Owner&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="40" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="executor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="Digital Executor" vertex="1">
-          <mxGeometry height="90" width="250" x="70" y="900" as="geometry" />
+        <mxCell id="executor" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" value="&lt;b&gt;Digital Executor / Trustee&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="40" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="beneficiary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="Beneficiary" vertex="1">
-          <mxGeometry height="90" width="250" x="1360" y="380" as="geometry" />
+        <mxCell id="verifier" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=18;" value="&lt;b&gt;Legal Verifier / Notary&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="40" y="690" as="geometry" />
         </mxCell>
-        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="System Administrator" vertex="1">
-          <mxGeometry height="90" width="250" x="1440" y="900" as="geometry" />
+        <mxCell id="admin" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" value="&lt;b&gt;System Administrator&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="40" y="923" as="geometry" />
         </mxCell>
-        <mxCell id="identity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="OTP / eKYC Service" vertex="1">
-          <mxGeometry height="90" width="250" x="750" y="140" as="geometry" />
+        <mxCell id="beneficiary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" value="&lt;b&gt;Beneficiary&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="1860" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="legal" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#7c3aed;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="Legal Verifier / Notary" vertex="1">
-          <mxGeometry height="90" width="280" x="320" y="1190" as="geometry" />
+        <mxCell id="identity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" value="&lt;b&gt;OTP / eKYC Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="1860" y="528" as="geometry" />
         </mxCell>
-        <mxCell id="notification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e0f2fe;strokeColor=#0284c7;strokeWidth=2;fontColor=#0f172a;fontSize=18;fontStyle=1;" value="Notification Service" vertex="1">
-          <mxGeometry height="90" width="280" x="1160" y="1190" as="geometry" />
+        <mxCell id="signature" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" value="&lt;b&gt;Digital Signature / e-Notary Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="1860" y="689" as="geometry" />
         </mxCell>
-        <mxCell id="owner_in" edge="1" parent="1" source="owner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563eb;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.35;exitDx=0;exitDy=0;" target="system">
-          <mxGeometry relative="1" x="-0.0634" as="geometry">
+        <mxCell id="notification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" value="&lt;b&gt;Email / SMS / Push Provider&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="1860" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_owner_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Asset records and legal documents&lt;br&gt;Beneficiary / executor assignments&lt;br&gt;DMS configuration and check-in response" vertex="1">
+          <mxGeometry height="60" width="350" x="370" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_owner_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Check-in request and confirmation&lt;br&gt;Security notification and audit history" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_executor_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Death certificate and supporting / corrected documents&lt;br&gt;Handover progress request" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="485" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_executor_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Trigger notice, asset metadata and instructions&lt;br&gt;Verification status and per-asset progress" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_verifier_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="LegalVerificationRequest and document package&lt;br&gt;Digital-signature validation result" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_verifier_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Approval or rejection with reason&lt;br&gt;Electronic signature / unlock authorization" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="766" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_admin_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="User, role and RBAC management&lt;br&gt;Policies, DMS defaults, backup and integration configuration" vertex="1">
+          <mxGeometry height="45" width="350" x="370" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_admin_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Audit logs and security alerts&lt;br&gt;System and backup status" vertex="1">
+          <mxGeometry height="45" width="350" x="367" y="1013" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_beneficiary_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Handover notification and assignment status&lt;br&gt;Assigned decrypted assets / access keys" vertex="1">
+          <mxGeometry height="45" width="350" x="1480" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_beneficiary_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="OTP / eKYC identity data&lt;br&gt;Per-asset receipt confirmation" vertex="1">
+          <mxGeometry height="45" width="350" x="1480" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_identity_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="OTP delivery / identity verification request" vertex="1">
+          <mxGeometry height="30" width="350" x="1476" y="523" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_identity_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="OTP validation / eKYC verification result" vertex="1">
+          <mxGeometry height="30" width="350" x="1480" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_signature_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Document / signature validation request&lt;br&gt;e-Notary signing request" vertex="1">
+          <mxGeometry height="45" width="350" x="1480" y="665" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_signature_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Validation result&lt;br&gt;Digital certificate / signature status" vertex="1">
+          <mxGeometry height="45" width="350" x="1480" y="761" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_notification_out" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Email / SMS / push notification request" vertex="1">
+          <mxGeometry height="30" width="350" x="1480" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_notification_in" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#374151;" value="Notification delivery status" vertex="1">
+          <mxGeometry height="30" width="350" x="1480" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_to_system" edge="1" parent="1" source="owner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.35;entryX=0;entryY=0.10;curved=0;" target="system">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="380" y="410" />
-              <mxPoint x="760" y="410" />
+              <mxPoint x="826.7" y="361.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="owner_in_label" connectable="0" parent="owner_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#93c5fd;fontSize=12;" value="&lt;div style=&quot;width:270px;padding:4px;&quot;&gt;Asset Records, Legal Documents,&lt;br&gt;Assignments, Check-In Configuration and Response&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.1367" y="-1" as="geometry">
-            <mxPoint x="-86" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="owner_out" edge="1" parent="1" source="system" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2563eb;strokeWidth=2;endArrow=block;endFill=1;exitX=0.097;exitY=0.194;exitDx=0;exitDy=0;entryX=0.4;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" target="owner">
-          <mxGeometry relative="1" x="-0.2106" as="geometry" />
-        </mxCell>
-        <mxCell id="owner_out_label" connectable="0" parent="owner_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#93c5fd;fontSize=12;" value="&lt;div style=&quot;width:250px;padding:4px;&quot;&gt;Check-In Requests, Confirmations,&lt;br&gt;Security Notifications and Audit History&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.1431" y="1" as="geometry">
-            <mxPoint x="-15" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="executor_in" edge="1" parent="1" source="executor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d97706;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" target="system">
-          <mxGeometry relative="1" x="0.142" as="geometry">
+        <mxCell id="system_to_owner" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0.698;entryY=1.02;curved=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="owner">
+          <mxGeometry relative="1" x="-0.1117" as="geometry">
             <Array as="points">
-              <mxPoint x="200" y="900" />
-              <mxPoint x="200" y="825.7" />
+              <mxPoint x="249.4" y="470.6" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="executor_in_label" connectable="0" parent="executor_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#fbbf24;fontSize=12;" value="&lt;div style=&quot;width:255px;padding:4px;&quot;&gt;Death Certificate, Supporting or Corrected&lt;br&gt;Documents and Handover Status Request&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0725" y="-1" as="geometry">
-            <mxPoint x="-3" y="-4" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="executor_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d97706;strokeWidth=2;endArrow=block;endFill=1;entryX=1;entryY=0.7;entryDx=0;entryDy=0;" target="executor">
-          <mxGeometry relative="1" x="0.0909" as="geometry">
+        <mxCell id="executor_to_system" edge="1" parent="1" source="executor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.35;curved=0;" target="system">
+          <mxGeometry relative="1" x="0.0111" as="geometry">
             <Array as="points">
-              <mxPoint x="750" y="963" />
+              <mxPoint x="755.57" y="541.5" />
+              <mxPoint x="755.57" y="541.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="executor_out_label" connectable="0" parent="executor_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#fbbf24;fontSize=12;" value="&lt;div style=&quot;width:255px;padding:4px;&quot;&gt;Inactivity Alert, Authorized Asset Information,&lt;br&gt;Handover Instructions and Verification Status&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.1639" y="1" as="geometry">
-            <mxPoint x="-45" y="-4" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="beneficiary_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.35;entryDx=0;entryDy=0;" target="beneficiary">
-          <mxGeometry relative="1" x="0.3128" as="geometry">
+        <mxCell id="system_to_executor" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.41;curved=0;" target="executor">
+          <mxGeometry relative="1" x="0.0252" as="geometry">
             <Array as="points">
-              <mxPoint x="994.2" y="400" />
-              <mxPoint x="1340" y="400" />
-              <mxPoint x="1340" y="411.5" />
+              <mxPoint x="384.56" y="588" />
+              <mxPoint x="384.56" y="588" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="beneficiary_out_label" connectable="0" parent="beneficiary_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#86efac;fontSize=12;" value="&lt;div style=&quot;width:250px;padding:4px;&quot;&gt;Handover Notification, Authorized Assets,&lt;br&gt;Access Keys and Verification Status&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.2075" y="-1" as="geometry">
-            <mxPoint x="175" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="beneficiary_in" edge="1" parent="1" source="beneficiary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#16a34a;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;" target="system">
-          <mxGeometry relative="1" x="-0.301" as="geometry">
+        <mxCell id="system_to_verifier" edge="1" parent="1" source="system" style="rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=1;entryY=0.35;edgeStyle=orthogonalEdgeStyle;" target="verifier">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1485" y="740.6" />
+              <mxPoint x="612.92" y="721.5" />
+              <mxPoint x="612.92" y="721.5" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="beneficiary_in_label" connectable="0" parent="beneficiary_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#86efac;fontSize=12;" value="&lt;div style=&quot;width:245px;padding:4px;&quot;&gt;OTP / eKYC Information&lt;br&gt;and Receipt Confirmation&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.3071" y="1" as="geometry">
-            <mxPoint x="-177" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="admin_in" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#dc2626;strokeWidth=2;endArrow=block;endFill=1;exitX=0;exitY=0.35;exitDx=0;exitDy=0;" target="system">
-          <mxGeometry relative="1" x="0.2583" as="geometry">
-            <Array as="points">
-              <mxPoint x="1440" y="960" />
-              <mxPoint x="970" y="960" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="admin_in_label" connectable="0" parent="admin_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#fca5a5;fontSize=12;" value="&lt;div style=&quot;width:255px;padding:4px;&quot;&gt;User, Role and Security Policy Management;&lt;br&gt;Backup and Integration Configuration&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.2003" y="-1" as="geometry">
-            <mxPoint x="134" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="admin_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#dc2626;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0.472;entryY=-0.021;entryDx=0;entryDy=0;entryPerimeter=0;" target="admin">
-          <mxGeometry relative="1" x="-0.0842" as="geometry">
-            <Array as="points">
-              <mxPoint x="1558" y="825.7" />
-            </Array>
-            <mxPoint x="1420" y="930" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="admin_out_label" connectable="0" parent="admin_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#fca5a5;fontSize=12;" value="&lt;div style=&quot;width:235px;padding:4px;&quot;&gt;Audit Logs, Security Alerts,&lt;br&gt;System Status and Backup Status&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.0113" y="1" as="geometry">
-            <mxPoint y="5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="identity_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;endArrow=block;endFill=1;exitX=0.42;exitY=0;exitDx=0;exitDy=0;entryX=0.345;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" target="identity">
-          <mxGeometry relative="1" x="0.0054" as="geometry">
+        <mxCell id="verifier_to_system" edge="1" parent="1" source="verifier" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.75;entryX=0.022;entryY=0.653;curved=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="system">
+          <mxGeometry relative="1" x="-0.0042" as="geometry">
             <Array as="points" />
-            <mxPoint x="830" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="identity_out_label" connectable="0" parent="identity_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#7dd3fc;fontSize=12;rotation=90;" value="&lt;div style=&quot;width:220px;padding:4px;&quot;&gt;OTP Delivery and&lt;br&gt;Identity Verification Request&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.0967" y="-1" as="geometry">
-            <mxPoint x="3" y="-5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="identity_in" edge="1" parent="1" source="identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;endArrow=block;endFill=1;" target="system">
-          <mxGeometry relative="1" x="0.1936" as="geometry">
+        <mxCell id="admin_to_system" edge="1" parent="1" source="admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.613;exitY=-0.012;entryX=0;entryY=0.84;exitDx=0;exitDy=0;exitPerimeter=0;curved=0;" target="system">
+          <mxGeometry relative="1" x="0.1236" as="geometry">
             <Array as="points">
-              <mxPoint x="940" y="590" />
-              <mxPoint x="940" y="590" />
-            </Array>
-            <mxPoint x="930" y="360" as="sourcePoint" />
-            <mxPoint x="940.5" y="595" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="identity_in_label" connectable="0" parent="identity_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#7dd3fc;fontSize=12;rotation=90;" value="&lt;div style=&quot;width:200px;padding:4px;&quot;&gt;OTP Validation and&lt;br&gt;eKYC Verification Result&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.2502" y="1" as="geometry">
-            <mxPoint x="-1" y="-48" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="legal_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7c3aed;strokeWidth=2;endArrow=block;endFill=1;exitX=0.433;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.428;entryY=0.998;entryDx=0;entryDy=0;entryPerimeter=0;" target="legal">
-          <mxGeometry relative="1" x="-0.3443" as="geometry">
-            <Array as="points">
-              <mxPoint x="840" y="1340" />
-              <mxPoint x="439.8" y="1340" />
-            </Array>
-            <mxPoint x="860.9" y="921.5" as="sourcePoint" />
-            <mxPoint x="440.0200000000001" y="1282.79" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="notification_out" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;endArrow=block;endFill=1;entryX=0.637;entryY=1.018;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.567;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="notification">
-          <mxGeometry relative="1" x="-0.2327" as="geometry">
-            <Array as="points">
-              <mxPoint x="880.1" y="1340" />
-              <mxPoint x="1338.4" y="1340" />
+              <mxPoint x="223.9" y="898.9" />
+              <mxPoint x="810.6" y="898.9" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="notification_out_label" connectable="0" parent="notification_out" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#7dd3fc;fontSize=12;rotation=0;" value="&lt;div style=&quot;width:210px;padding:4px;&quot;&gt;Email / SMS / Push&lt;br&gt;Notification Request&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.269" y="-1" as="geometry">
-            <mxPoint x="170" y="112" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="notification_in" edge="1" parent="1" source="notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0284c7;strokeWidth=2;endArrow=block;endFill=1;exitX=0.65;exitY=0;exitDx=0;exitDy=0;" target="system">
-          <mxGeometry relative="1" x="-0.0149" as="geometry">
+        <mxCell id="system_to_admin" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.276;exitY=0.946;entryX=0.658;entryY=1.018;curved=0;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="admin">
+          <mxGeometry relative="1" x="-0.0703" as="geometry">
             <Array as="points">
-              <mxPoint x="1342" y="1090" />
-              <mxPoint x="920" y="1090" />
+              <mxPoint x="943.2" y="1067.9" />
+              <mxPoint x="237.4" y="1067.9" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="notification_in_label" connectable="0" parent="notification_in" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#7dd3fc;fontSize=12;rotation=0;" value="&lt;div style=&quot;width:180px;padding:4px;&quot;&gt;Notification&lt;br&gt;Delivery Status&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0362" y="1" as="geometry">
-            <mxPoint x="-17" y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#cbd5e1;fontColor=#475569;fontSize=12;align=left;spacingLeft=12;" value="&lt;b&gt;Notation&lt;/b&gt;&lt;br&gt;Rectangle: External Entity or External Service&lt;br&gt;Rounded Rectangle: LegacyVault System&lt;br&gt;Solid Arrow: Directed Data Flow" vertex="1">
-          <mxGeometry height="105" width="330" x="-130" y="1400" as="geometry" />
-        </mxCell>
-        <mxCell id="eFzP9yLHSp-akmlyOs7E-4" edge="1" parent="1" source="legal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#7c3aed;strokeWidth=2;endArrow=block;endFill=1;exitX=0.39;exitY=0.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.289;entryY=0.961;entryDx=0;entryDy=0;entryPerimeter=0;" target="system">
-          <mxGeometry relative="1" x="0.0223" as="geometry">
+        <mxCell id="system_to_beneficiary" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.10;entryX=0;entryY=0.35;curved=0;" target="beneficiary">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="440" y="1190.4" />
-              <mxPoint x="440" y="1090" />
-              <mxPoint x="796.7" y="1090" />
+              <mxPoint x="1373.3" y="361.5" />
             </Array>
-            <mxPoint x="770" y="1324" as="sourcePoint" />
-            <mxPoint x="781" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eFzP9yLHSp-akmlyOs7E-5" connectable="0" parent="eFzP9yLHSp-akmlyOs7E-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#c4b5fd;fontSize=12;rotation=0;" value="&lt;div style=&quot;width:235px;padding:4px;&quot;&gt;Verification Decision, Electronic Signature&lt;br&gt;and Document Correction Request&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0746" y="1" as="geometry">
-            <mxPoint x="-8" y="251" as="offset" />
+        <mxCell id="beneficiary_to_system" edge="1" parent="1" source="beneficiary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.432;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;curved=0;" target="system">
+          <mxGeometry relative="1" x="0.2171" as="geometry">
+            <Array as="points">
+              <mxPoint x="1989.6" y="469.5" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="eFzP9yLHSp-akmlyOs7E-7" connectable="0" parent="eFzP9yLHSp-akmlyOs7E-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;labelBorderColor=#c4b5fd;fontSize=12;rotation=0;" value="&lt;div style=&quot;width:235px;padding:4px;&quot;&gt;Death Certificate and&lt;br&gt;Legal Document Package&lt;/div&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0746" y="1" as="geometry">
-            <mxPoint x="-48" y="1" as="offset" />
+        <mxCell id="system_to_identity" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0;entryY=0.35;curved=0;exitX=0.983;exitY=0.371;exitDx=0;exitDy=0;exitPerimeter=0;" target="identity">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="identity_to_system" edge="1" parent="1" source="identity" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.75;entryX=0.989;entryY=0.422;curved=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="system">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="system_to_signature" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;entryX=0;entryY=0.35;curved=0;exitX=0.989;exitY=0.602;exitDx=0;exitDy=0;exitPerimeter=0;" target="signature">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="signature_to_system" edge="1" parent="1" source="signature" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.75;entryX=0.974;entryY=0.652;curved=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="system">
+          <mxGeometry relative="1" x="0.0044" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="system_to_notification" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.84;curved=0;" target="notification">
+          <mxGeometry relative="1" x="0.0051" as="geometry">
+            <Array as="points">
+              <mxPoint x="1389.4" y="903.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notification_to_system" edge="1" parent="1" source="notification" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.432;exitY=0.994;entryX=0.791;entryY=0.91;entryDx=0;entryDy=0;entryPerimeter=0;exitDx=0;exitDy=0;exitPerimeter=0;curved=0;" target="system">
+          <mxGeometry relative="1" x="0.1346" as="geometry">
+            <Array as="points">
+              <mxPoint x="1989.6" y="1016" />
+              <mxPoint x="1303.7" y="1016" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#9CA3AF;fontSize=14;align=left;spacingLeft=12;" value="&lt;b&gt;Legend&lt;/b&gt;&lt;br&gt;Rectangles: external actors or external services&lt;br&gt;Circle: LegacyVault system boundary&lt;br&gt;Each arrow uses a separate port and shows one data-flow direction" vertex="1">
+          <mxGeometry height="125" width="550" x="870" y="1101" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

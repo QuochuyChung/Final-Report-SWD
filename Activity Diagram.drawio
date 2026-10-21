@@ -1,289 +1,311 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
-  <diagram id="legacyvault-activity" name="Activity Diagram">
-    <mxGraphModel dx="1043" dy="382" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1900" pageHeight="2000" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="legacyvault-activity-aligned" name="Activity Diagram">
+    <mxGraphModel dx="946" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="3000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="6QLslamT1dmXC8XA4QvD-30" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;LegacyVault – Digital Asset Handover Process&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="2000" width="2150" x="-230" y="360" as="geometry">
-            <mxRectangle height="30" width="70" x="-230" y="360" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="title" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=28;fontColor=#1F2937;" value="&lt;b&gt;LegacyVault – Digital Asset Handover Activity Diagram&lt;/b&gt;" vertex="1">
+          <mxGeometry height="45" width="1120" x="390" y="20" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-31" parent="6QLslamT1dmXC8XA4QvD-30" style="swimlane;startSize=20;html=1;" value="&lt;code&gt;Vault Owner&lt;/code&gt;" vertex="1">
-          <mxGeometry height="1980" width="320" y="20" as="geometry" />
+        <mxCell id="lane_owner" parent="1" style="swimlane;html=1;horizontal=1;startSize=45;fillColor=#dae8fc;swimlaneFillColor=#f8fbff;strokeColor=#6c8ebf;fontSize=18;fontColor=#1F2937;" value="&lt;b&gt;Vault Owner&lt;/b&gt;" vertex="1">
+          <mxGeometry height="2885" width="350" x="20" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-46" edge="1" parent="6QLslamT1dmXC8XA4QvD-31" source="6QLslamT1dmXC8XA4QvD-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-45">
+        <mxCell id="lane_system" parent="1" style="swimlane;html=1;horizontal=1;startSize=45;fillColor=#d5e8d4;swimlaneFillColor=#fbfefb;strokeColor=#82b366;fontSize=18;fontColor=#1F2937;" value="&lt;b&gt;LegacyVault System&lt;/b&gt;" vertex="1">
+          <mxGeometry height="2885" width="395" x="370" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_executor" parent="1" style="swimlane;html=1;horizontal=1;startSize=45;fillColor=#fff2cc;swimlaneFillColor=#fffdf7;strokeColor=#d6b656;fontSize=18;fontColor=#1F2937;" value="&lt;b&gt;Digital Executor&lt;/b&gt;" vertex="1">
+          <mxGeometry height="2885" width="373" x="760" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="executor_monitor" parent="lane_executor" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" value="Monitor per-asset&lt;br&gt;handover progress" vertex="1">
+          <mxGeometry height="70" width="230" x="60" y="2628" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_verifier" parent="1" style="swimlane;html=1;horizontal=1;startSize=45;fillColor=#e1d5e7;swimlaneFillColor=#fdfbfe;strokeColor=#9673a6;fontSize=18;fontColor=#1F2937;" value="&lt;b&gt;Legal Verifier / Notary&lt;/b&gt;" vertex="1">
+          <mxGeometry height="2885" width="373" x="1130" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="verifier_reject" parent="lane_verifier" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;" value="Reject request with reason&lt;br&gt;and request correction" vertex="1">
+          <mxGeometry height="80" width="260" x="45" y="1919" as="geometry" />
+        </mxCell>
+        <mxCell id="lane_beneficiary" parent="1" style="swimlane;html=1;horizontal=1;startSize=45;fillColor=#f8cecc;swimlaneFillColor=#fffafa;strokeColor=#b85450;fontSize=18;fontColor=#1F2937;" value="&lt;b&gt;Beneficiary&lt;/b&gt;" vertex="1">
+          <mxGeometry height="2885" width="350" x="1500" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#1F2937;strokeColor=#1F2937;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="180" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_create_assets" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" value="Create encrypted digital&lt;br&gt;asset records" vertex="1">
+          <mxGeometry height="70" width="240" x="75" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_upload_docs" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" value="Upload E2E-encrypted&lt;br&gt;legal documents" vertex="1">
+          <mxGeometry height="70" width="240" x="75" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_assign_people" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" value="Assign one beneficiary per asset&lt;br&gt;and appoint one active executor" vertex="1">
+          <mxGeometry height="80" width="270" x="60" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_configure_dms" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" value="Configure check-in cycle&lt;br&gt;and waiting period" vertex="1">
+          <mxGeometry height="70" width="240" x="75" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="system_encrypt" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Encrypt and store&lt;br&gt;vault data" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="system_send_checkin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Schedule and send&lt;br&gt;periodic check-in" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_deadline" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" value="Owner responds by&lt;br&gt;check-in deadline?" vertex="1">
+          <mxGeometry height="110" width="170" x="480" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="system_waiting" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Set DMS to Waiting&lt;br&gt;and send reminder" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_waiting" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" value="Owner responds before&lt;br&gt;waiting period expires?" vertex="1">
+          <mxGeometry height="120" width="180" x="475" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="owner_respond" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;" value="Submit “I’m Safe”&lt;br&gt;check-in response" vertex="1">
+          <mxGeometry height="70" width="240" x="75" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="system_reset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Reset DMS to Active and&lt;br&gt;schedule next cycle" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="system_trigger" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;" value="Set DMS to Triggered;&lt;br&gt;notify executor; write audit log" vertex="1">
+          <mxGeometry height="80" width="280" x="425" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="executor_review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" value="Review authorized asset metadata&lt;br&gt;and handover instructions" vertex="1">
+          <mxGeometry height="80" width="270" x="800" y="1530" as="geometry" />
+        </mxCell>
+        <mxCell id="executor_submit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" value="Submit death certificate&lt;br&gt;and supporting documents" vertex="1">
+          <mxGeometry height="80" width="250" x="810" y="1650" as="geometry" />
+        </mxCell>
+        <mxCell id="verifier_review" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;" value="Review legal documents and&lt;br&gt;digital-signature validation result" vertex="1">
+          <mxGeometry height="80" width="270" x="1170" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_valid" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" value="Documents valid?" vertex="1">
+          <mxGeometry height="100" width="160" x="1225" y="1870" as="geometry" />
+        </mxCell>
+        <mxCell id="executor_resubmit" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=16;" value="Exchange documents through the&lt;br&gt;integrated channel and resubmit" vertex="1">
+          <mxGeometry height="80" width="270" x="800" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="verifier_approve" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=16;" value="Approve request and&lt;br&gt;apply electronic signature" vertex="1">
+          <mxGeometry height="80" width="250" x="1180" y="2120" as="geometry" />
+        </mxCell>
+        <mxCell id="system_unlock" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Validate signature, unlock vault,&lt;br&gt;create Handover Case and assignments" vertex="1">
+          <mxGeometry height="80" width="290" x="420" y="2230" as="geometry" />
+        </mxCell>
+        <mxCell id="system_select_asset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Select next open asset and&lt;br&gt;notify its assigned beneficiary" vertex="1">
+          <mxGeometry height="80" width="270" x="430" y="2350" as="geometry" />
+        </mxCell>
+        <mxCell id="beneficiary_verify" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;" value="Complete OTP / eKYC&lt;br&gt;identity verification" vertex="1">
+          <mxGeometry height="80" width="250" x="1550" y="2350" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_identity" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" value="Identity verified?" vertex="1">
+          <mxGeometry height="100" width="160" x="1595" y="2460" as="geometry" />
+        </mxCell>
+        <mxCell id="system_retry_identity" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Display verification failure&lt;br&gt;and allow retry" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="2465" as="geometry" />
+        </mxCell>
+        <mxCell id="beneficiary_receive" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;" value="View / download assigned asset&lt;br&gt;and confirm receipt" vertex="1">
+          <mxGeometry height="80" width="270" x="1540" y="2590" as="geometry" />
+        </mxCell>
+        <mxCell id="system_close_asset" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Close that asset assignment;&lt;br&gt;update progress; write audit log" vertex="1">
+          <mxGeometry height="80" width="270" x="430" y="2590" as="geometry" />
+        </mxCell>
+        <mxCell id="decision_all_closed" parent="1" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=15;" value="All asset assignments&lt;br&gt;closed?" vertex="1">
+          <mxGeometry height="110" width="170" x="480" y="2700" as="geometry" />
+        </mxCell>
+        <mxCell id="system_complete" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=16;" value="Mark Handover Case&lt;br&gt;Completed" vertex="1">
+          <mxGeometry height="70" width="230" x="450" y="2840" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;html=1;shape=endState;fillColor=#1F2937;strokeColor=#1F2937;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="550" y="2930" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="owner_create_assets">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-43" parent="6QLslamT1dmXC8XA4QvD-31" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="40" width="40" x="110" y="70" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-48" edge="1" parent="6QLslamT1dmXC8XA4QvD-31" source="6QLslamT1dmXC8XA4QvD-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-47">
+        <mxCell id="e2" edge="1" parent="1" source="owner_create_assets" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="owner_upload_docs">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-45" parent="6QLslamT1dmXC8XA4QvD-31" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Create Digital&lt;br&gt;Asset Records&lt;/font&gt;&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="60" width="180" x="40" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-50" edge="1" parent="6QLslamT1dmXC8XA4QvD-31" source="6QLslamT1dmXC8XA4QvD-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-49">
+        <mxCell id="e3" edge="1" parent="1" source="owner_upload_docs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="owner_assign_people">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-47" parent="6QLslamT1dmXC8XA4QvD-31" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Upload Supporting &lt;br&gt;Legal Documents&lt;/b&gt;&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="60" width="180" x="40" y="250" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-62" edge="1" parent="6QLslamT1dmXC8XA4QvD-31" source="6QLslamT1dmXC8XA4QvD-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-51" value="">
+        <mxCell id="e4" edge="1" parent="1" source="owner_assign_people" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="owner_configure_dms">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-49" parent="6QLslamT1dmXC8XA4QvD-31" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=12;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Assign Beneficiaries &lt;br&gt;and Digital Executor&lt;/font&gt;&lt;/b&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="60" width="180" x="40" y="350" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-51" parent="6QLslamT1dmXC8XA4QvD-31" style="rounded=1;whiteSpace=wrap;html=1;align=center;fontSize=12;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Configure Check-In Interval&lt;br&gt;and Grace Period&lt;/b&gt;&lt;/font&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="60" width="220" x="20" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-32" parent="6QLslamT1dmXC8XA4QvD-30" style="swimlane;startSize=20;html=1;" value="&lt;code&gt;LegacyVault System&lt;/code&gt;" vertex="1">
-          <mxGeometry height="1980" width="540" x="320" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="codex-encrypt-action" parent="6QLslamT1dmXC8XA4QvD-32" style="rounded=1;whiteSpace=wrap;html=1;align=center;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Encrypt Asset Data&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Legal Documents&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="220" x="130" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-55" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-56">
+        <mxCell id="e5" edge="1" parent="1" source="owner_configure_dms" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="system_encrypt">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="240" y="550" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-52" parent="6QLslamT1dmXC8XA4QvD-32" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 14px; white-space: normal;&quot;&gt;Schedule Dead Man&#39;s Switch&lt;/span&gt;&lt;br style=&quot;font-family: Helvetica; font-size: 14px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: Helvetica; font-size: 14px; white-space: normal;&quot;&gt;and Send Check-In Request&lt;/span&gt;&lt;/b&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="60" width="240" x="120" y="550" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-59" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" target="6QLslamT1dmXC8XA4QvD-60">
-          <mxGeometry relative="1" x="0.0268" as="geometry">
             <Array as="points">
-              <mxPoint x="100" y="720" />
+              <mxPoint x="380" y="595" />
+              <mxPoint x="380" y="705" />
             </Array>
-            <mxPoint x="80" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-61" connectable="0" parent="6QLslamT1dmXC8XA4QvD-59" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;No&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.1545" y="-6" as="geometry">
-            <mxPoint x="6" y="11" as="offset" />
-          </mxGeometry>
+        <mxCell id="e6" edge="1" parent="1" source="system_encrypt" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="system_send_checkin">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-63" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.423;entryY=-0.047;entryDx=0;entryDy=0;entryPerimeter=0;" target="6QLslamT1dmXC8XA4QvD-64">
-          <mxGeometry relative="1" x="-0.0473" as="geometry">
+        <mxCell id="e7" edge="1" parent="1" source="system_send_checkin" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="decision_deadline">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="decision_deadline" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="system_waiting" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="system_waiting" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="decision_waiting">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="decision_deadline" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;" target="owner_respond" value="Yes">
+          <mxGeometry relative="1" x="-0.6926" y="-12" as="geometry">
+            <mxPoint as="offset" />
             <Array as="points">
-              <mxPoint x="380.4" y="720" />
+              <mxPoint x="353.3" y="945" />
+              <mxPoint x="353.3" y="1320.1" />
             </Array>
-            <mxPoint x="400" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-65" connectable="0" parent="6QLslamT1dmXC8XA4QvD-63" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Yes&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.1165" y="-1" as="geometry">
+        <mxCell id="e11" edge="1" parent="1" source="decision_waiting" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="owner_respond" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="owner_respond" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="system_reset">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="417.46" y="1351.68" />
+              <mxPoint x="417.46" y="1351.68" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="system_reset" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" target="system_send_checkin" value="Next cycle">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="1335" />
+              <mxPoint x="720" y="815" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="decision_waiting" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="system_trigger" value="No">
+          <mxGeometry relative="1" x="-0.3205" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="565" y="1270.9" />
+              <mxPoint x="401.9" y="1270.9" />
+              <mxPoint x="401.9" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="system_trigger" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="executor_review">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="1460" />
+              <mxPoint x="750" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="executor_review" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="executor_submit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="executor_submit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0.482;entryY=0.029;entryDx=0;entryDy=0;entryPerimeter=0;" target="verifier_review">
+          <mxGeometry relative="1" x="0.1779" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="verifier_review" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="decision_valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="decision_valid" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="verifier_reject" value="No">
+          <mxGeometry relative="1" x="-0.2697" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-56" parent="6QLslamT1dmXC8XA4QvD-32" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Owner Responds Before&lt;br&gt;Grace Period Ends?&lt;/b&gt;&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
-          <mxGeometry height="140" width="220" x="130" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-70" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-72">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="140" y="1110" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-60" parent="6QLslamT1dmXC8XA4QvD-32" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Trigger Handover Process&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="20" y="830" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-68" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-52">
+        <mxCell id="e20" edge="1" parent="1" source="verifier_reject" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="executor_resubmit">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="440" y="580" />
+              <mxPoint x="1152" y="2050" />
+              <mxPoint x="1152" y="2160" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-69" connectable="0" parent="6QLslamT1dmXC8XA4QvD-68" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Next Check-In Cycle&lt;/span&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.219" y="1" as="geometry">
-            <mxPoint y="21" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-64" parent="6QLslamT1dmXC8XA4QvD-32" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Update Active Status&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Schedule Next Check-In&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="190" x="300" y="830" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-72" parent="6QLslamT1dmXC8XA4QvD-32" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Notify Executor and Record Audit Log&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="20" y="950" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-104" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-103" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-96" parent="6QLslamT1dmXC8XA4QvD-32" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Unlock Authorized Assets,&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Decrypt Data, and Create Handover Tasks&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="280" x="70" y="1430" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-103" parent="6QLslamT1dmXC8XA4QvD-32" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Notify Beneficiary&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Request OTP / eKYC&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="190" x="115" y="1530" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-121" parent="6QLslamT1dmXC8XA4QvD-32" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Mark Assets as Delivered,&lt;/span&gt;&lt;br style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Close Case, and Record Audit Log&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="260" x="110" y="1820" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-123" parent="6QLslamT1dmXC8XA4QvD-32" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
-          <mxGeometry height="50" width="50" x="215" y="1920" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-125" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="6QLslamT1dmXC8XA4QvD-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-123">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-53" edge="1" parent="6QLslamT1dmXC8XA4QvD-32" source="codex-encrypt-action" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-52">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="codex-encrypt-to-assign" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="codex-encrypt-action">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-95" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-75">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-33" parent="6QLslamT1dmXC8XA4QvD-30" style="swimlane;startSize=20;html=1;" value="&lt;code&gt;Digital Executor&lt;/code&gt;" vertex="1">
-          <mxGeometry height="1980" width="400" x="860" y="20" as="geometry">
-            <mxRectangle height="460" width="40" x="240" y="20" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-78" edge="1" parent="6QLslamT1dmXC8XA4QvD-33" source="6QLslamT1dmXC8XA4QvD-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-77">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-75" parent="6QLslamT1dmXC8XA4QvD-33" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Review Authorized Assets&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Handover Instructions&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="110" y="940" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-80" edge="1" parent="6QLslamT1dmXC8XA4QvD-33" source="6QLslamT1dmXC8XA4QvD-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-79">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-77" parent="6QLslamT1dmXC8XA4QvD-33" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Submit Death Certificate&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Supporting Legal Documents&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="70" width="200" x="110" y="1070" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-81" edge="1" parent="6QLslamT1dmXC8XA4QvD-33" source="6QLslamT1dmXC8XA4QvD-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-77">
-          <mxGeometry relative="1" x="0.003" as="geometry">
+        <mxCell id="e21" edge="1" parent="1" source="executor_resubmit" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;" target="verifier_review" value="Resubmit">
+          <mxGeometry relative="1" x="-0.1423" as="geometry">
             <Array as="points">
-              <mxPoint x="80" y="1310" />
-              <mxPoint x="80" y="1105" />
+              <mxPoint x="935" y="1976" />
+              <mxPoint x="1110" y="1976" />
+              <mxPoint x="1110" y="1800" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-82" connectable="0" parent="6QLslamT1dmXC8XA4QvD-81" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Resubmit Documents&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.6377" y="3" as="geometry">
-            <mxPoint x="3" y="-92" as="offset" />
+        <mxCell id="e22" edge="1" parent="1" source="decision_valid" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="verifier_approve" value="Yes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="1920" />
+              <mxPoint x="1460" y="2160" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-79" parent="6QLslamT1dmXC8XA4QvD-33" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Reject and Request&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Missing or Corrected Documents&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="110" y="1280" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-40" parent="6QLslamT1dmXC8XA4QvD-30" style="swimlane;startSize=20;html=1;" value="&lt;code&gt;Legal Verifier / Notary&lt;/code&gt;" vertex="1">
-          <mxGeometry height="1980" width="360" x="1260" y="20" as="geometry">
-            <mxRectangle height="460" width="40" x="240" y="20" as="alternateBounds" />
+        <mxCell id="e23" edge="1" parent="1" source="verifier_approve" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" target="system_unlock">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1305" y="2234.7" />
+              <mxPoint x="740" y="2234.7" />
+              <mxPoint x="740" y="2270" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-88" edge="1" parent="6QLslamT1dmXC8XA4QvD-40" source="6QLslamT1dmXC8XA4QvD-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-87" value="">
+        <mxCell id="e24" edge="1" parent="1" source="system_unlock" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="system_select_asset">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-84" parent="6QLslamT1dmXC8XA4QvD-40" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Review Death Certificate,&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Digital Signature, and Legal Documents&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="95" y="1140" as="geometry" />
+        <mxCell id="e25" edge="1" parent="1" source="system_select_asset" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="beneficiary_verify">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-92" edge="1" parent="6QLslamT1dmXC8XA4QvD-40" source="6QLslamT1dmXC8XA4QvD-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-91" value="">
+        <mxCell id="e26" edge="1" parent="1" source="beneficiary_verify" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="decision_identity">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-93" connectable="0" parent="6QLslamT1dmXC8XA4QvD-92" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="Yes" vertex="1">
-          <mxGeometry relative="1" x="-0.2167" as="geometry">
+        <mxCell id="e27" edge="1" parent="1" source="decision_identity" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;" target="system_retry_identity" value="No">
+          <mxGeometry relative="1" x="0.0011" y="-12" as="geometry">
             <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-87" parent="6QLslamT1dmXC8XA4QvD-40" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Documents&lt;/span&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Valid?&lt;/span&gt;" vertex="1">
-          <mxGeometry height="80" width="140" x="125" y="1260" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-91" parent="6QLslamT1dmXC8XA4QvD-40" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;span style=&quot;font-size: 14px; font-weight: 700;&quot;&gt;Approve and Apply Electronic Signature&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="200" x="95" y="1430" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-41" parent="6QLslamT1dmXC8XA4QvD-30" style="swimlane;startSize=20;html=1;" value="&lt;code&gt;Beneficiary&lt;/code&gt;" vertex="1">
-          <mxGeometry height="1980" width="530" x="1620" y="20" as="geometry">
-            <mxRectangle height="460" width="40" x="240" y="20" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-108" edge="1" parent="6QLslamT1dmXC8XA4QvD-41" source="6QLslamT1dmXC8XA4QvD-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-107" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-105" parent="6QLslamT1dmXC8XA4QvD-41" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Complete Identity Verification&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;using OTP / eKYC&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="210" x="82.5" y="1500" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-110" edge="1" parent="6QLslamT1dmXC8XA4QvD-41" source="6QLslamT1dmXC8XA4QvD-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" target="6QLslamT1dmXC8XA4QvD-109" value="">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-113" connectable="0" parent="6QLslamT1dmXC8XA4QvD-110" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Yes&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.1222" y="-1" as="geometry">
-            <mxPoint x="1" y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-117" edge="1" parent="6QLslamT1dmXC8XA4QvD-41" source="6QLslamT1dmXC8XA4QvD-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-116" value="">
-          <mxGeometry relative="1" x="0.0977" as="geometry">
             <Array as="points">
-              <mxPoint x="390" y="1650" />
+              <mxPoint x="938.6" y="2510" />
+              <mxPoint x="938.6" y="2510" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-118" connectable="0" parent="6QLslamT1dmXC8XA4QvD-117" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;No&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="0.0233" y="-2" as="geometry">
-            <mxPoint x="-45" y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-107" parent="6QLslamT1dmXC8XA4QvD-41" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;rounded=0;" value="&lt;span style=&quot;font-size: 13px;&quot;&gt;Identity&lt;/span&gt;&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Verified?&lt;/span&gt;" vertex="1">
-          <mxGeometry height="80" width="115" x="130" y="1610" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-109" parent="6QLslamT1dmXC8XA4QvD-41" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;b&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;View / Download Assets or Access Keys&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;and Confirm Receipt&lt;/span&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="295" x="40" y="1820" as="geometry" />
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-119" edge="1" parent="6QLslamT1dmXC8XA4QvD-41" source="6QLslamT1dmXC8XA4QvD-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-105">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="450" y="1530" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-120" connectable="0" parent="6QLslamT1dmXC8XA4QvD-119" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Retry&lt;/font&gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.2942" as="geometry">
+        <mxCell id="e28" edge="1" parent="1" source="system_retry_identity" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="beneficiary_verify" value="Retry">
+          <mxGeometry relative="1" x="0.0876" as="geometry">
             <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="877.2" y="2482.5" />
+              <mxPoint x="877.2" y="2309.4" />
+              <mxPoint x="1665" y="2309.4" />
+            </Array>
+            <mxPoint x="680.0000000000001" y="2473" as="sourcePoint" />
+            <mxPoint x="1664.9999999999998" y="2398" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-116" parent="6QLslamT1dmXC8XA4QvD-41" style="whiteSpace=wrap;html=1;rounded=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;Display Failure and&lt;/span&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Allow Verification Retry&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="180" x="320" y="1720" as="geometry" />
+        <mxCell id="e29" edge="1" parent="1" source="decision_identity" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="beneficiary_receive" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-83" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="6QLslamT1dmXC8XA4QvD-84">
+        <mxCell id="e30" edge="1" parent="1" source="beneficiary_receive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="system_close_asset">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="system_close_asset" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="executor_monitor">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1210" y="1120" />
-              <mxPoint x="1210" y="1190" />
+              <mxPoint x="565" y="2690" />
+              <mxPoint x="935" y="2690" />
             </Array>
-            <mxPoint x="1300" y="1450" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-89" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-79">
+        <mxCell id="e32" edge="1" parent="1" source="executor_monitor" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="decision_all_closed">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1200" y="1320" />
-              <mxPoint x="1200" y="1320" />
+              <mxPoint x="820" y="2755" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-90" connectable="0" parent="6QLslamT1dmXC8XA4QvD-89" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=14;" value="No" vertex="1">
-          <mxGeometry relative="1" x="-0.3727" y="3" as="geometry">
-            <mxPoint x="29" y="-3" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-97" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-96" value="">
-          <mxGeometry relative="1" x="0.5281" as="geometry">
+        <mxCell id="e33" edge="1" parent="1" source="decision_all_closed" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="system_select_asset" value="No – next asset">
+          <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1310" y="1480" />
-              <mxPoint x="1310" y="1480" />
+              <mxPoint x="400" y="2755" />
+              <mxPoint x="400" y="2390" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-106" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-105" value="">
-          <mxGeometry relative="1" x="0.0009" as="geometry">
-            <Array as="points">
-              <mxPoint x="1580" y="1580" />
-              <mxPoint x="1580" y="1550" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="e34" edge="1" parent="1" source="decision_all_closed" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;fontSize=14;labelBackgroundColor=#ffffff;" target="system_complete" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6QLslamT1dmXC8XA4QvD-122" edge="1" parent="6QLslamT1dmXC8XA4QvD-30" source="6QLslamT1dmXC8XA4QvD-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="6QLslamT1dmXC8XA4QvD-121" value="">
+        <mxCell id="e35" edge="1" parent="1" source="system_complete" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeWidth=2;" target="end">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
