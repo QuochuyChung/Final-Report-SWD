@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="State Diagram v2" id="WuD7uVEm2MkQfU0aBbZt">
-    <mxGraphModel dx="3458" dy="-2415" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+    <mxGraphModel dx="2527" dy="-2824" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -29,7 +29,7 @@
             <mxGeometry height="87" width="152" x="2275" y="5565" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label=":Legal Verification Service&#xa;(+ kênh trao đổi)" mermaidId="n:lv" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#ffffff;strokeColor=#28253D;fontColor=#28253D;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue=":Legal Verification Service&#xa;(+ kênh trao đổi)" id="Y6RxJhvi-dOQ-CaqSJ1I-124">
+        <UserObject label=":Legal Verification Service&lt;br&gt;(+ communication channel)" mermaidId="n:lv" mermaidBaseStyle="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#ffffff;strokeColor=#28253D;fontColor=#28253D;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue=":Legal Verification Service&#xa;(+ kênh trao đổi)" id="Y6RxJhvi-dOQ-CaqSJ1I-124">
           <mxCell parent="Y6RxJhvi-dOQ-CaqSJ1I-113" style="html=1;whiteSpace=wrap;strokeWidth=2;fillColor=#ffffff;strokeColor=#28253D;fontColor=#28253D;fontFamily=Recursive;fontSize=14;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;labelWidth=120;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
             <mxGeometry height="108" width="152" x="604" y="6056" as="geometry" />
           </mxCell>
@@ -64,7 +64,7 @@
             <mxGeometry height="67" width="171" x="2975" y="5738" as="geometry" />
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 1: createAsset(), uploadLegalDoc() [mã hóa E2E]" mermaidId="e:owner-&gt;vault#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.33;entryX=0;entryY=0.3;strokeWidth=2;" mermaidBaseValue="▶ 1: createAsset(), uploadLegalDoc() [mã hóa E2E]" id="Y6RxJhvi-dOQ-CaqSJ1I-131">
+        <UserObject label="▶ 1: createAsset(), uploadLegalDoc() [E2E encrypted]" mermaidId="e:owner-&gt;vault#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.33;entryX=0;entryY=0.3;strokeWidth=2;" mermaidBaseValue="▶ 1: createAsset(), uploadLegalDoc() [mã hóa E2E]" id="Y6RxJhvi-dOQ-CaqSJ1I-131">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.33;entryX=0;entryY=0.3;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-120">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
@@ -98,7 +98,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 3: configureDMS(cycle, waitPeriod)&#xa;▶ 5: [owner phản hồi] confirmAlive()" mermaidId="e:owner-&gt;orch#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.56;entryX=0;entryY=0.31;strokeWidth=2;" mermaidBaseValue="▶ 3: configureDMS(cycle, waitPeriod)&#xa;▶ 5: [owner phản hồi] confirmAlive()" id="Y6RxJhvi-dOQ-CaqSJ1I-133">
+        <UserObject label="▶ 3: configureDMS(cycle, waitPeriod)&lt;br&gt;▶ 5: [owner responds] confirmAlive()" mermaidId="e:owner-&gt;orch#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.56;entryX=0;entryY=0.31;strokeWidth=2;" mermaidBaseValue="▶ 3: configureDMS(cycle, waitPeriod)&#xa;▶ 5: [owner phản hồi] confirmAlive()" id="Y6RxJhvi-dOQ-CaqSJ1I-133">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.56;entryX=0;entryY=0.31;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-121">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
@@ -111,7 +111,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 4: dueCheckIn()&#xa;▶ 6: [hết thời gian chờ] waitPeriodExpired()" mermaidId="e:sched-&gt;orch#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" mermaidBaseValue="▶ 4: dueCheckIn()&#xa;▶ 6: [hết thời gian chờ] waitPeriodExpired()" id="Y6RxJhvi-dOQ-CaqSJ1I-134">
+        <UserObject label="▶ 4: dueCheckIn()&lt;br&gt;▶ 6: [wait period expired] waitPeriodExpired()" mermaidId="e:sched-&gt;orch#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;" mermaidBaseValue="▶ 4: dueCheckIn()&#xa;▶ 6: [hết thời gian chờ] waitPeriodExpired()" id="Y6RxJhvi-dOQ-CaqSJ1I-134">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.5;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-121">
             <mxGeometry relative="1" as="geometry">
               <Array as="points" />
@@ -151,7 +151,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 8: submitVerificationRequest(deathCert)&#xa;▶ 11: [bị từ chối] resubmit() qua kênh trao đổi" mermaidId="e:exec-&gt;lv#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.62;entryX=0;entryY=0.36;strokeWidth=2;" mermaidBaseValue="▶ 8: submitVerificationRequest(deathCert)&#xa;▶ 11: [bị từ chối] resubmit() qua kênh trao đổi" id="Y6RxJhvi-dOQ-CaqSJ1I-138">
+        <UserObject label="▶ 8: submitVerificationRequest(deathCert)&lt;br&gt;▶ 11: [Rejected] resubmit() via communication channels" mermaidId="e:exec-&gt;lv#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.62;entryX=0;entryY=0.36;strokeWidth=2;" mermaidBaseValue="▶ 8: submitVerificationRequest(deathCert)&#xa;▶ 11: [bị từ chối] resubmit() qua kênh trao đổi" id="Y6RxJhvi-dOQ-CaqSJ1I-138">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" source="Y6RxJhvi-dOQ-CaqSJ1I-153" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;entryX=0;entryY=0.36;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-124">
             <mxGeometry relative="1" x="0.0285" as="geometry">
               <Array as="points">
@@ -164,7 +164,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 9: reviewRequest()&#xa;▶ 10: [từ chối] reject(reason) / requestMoreDocs()&#xa;▶ 12: [hợp lệ] approveAndSign()" mermaidId="e:ver-&gt;lv#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.63;strokeWidth=2;" mermaidBaseValue="▶ 9: reviewRequest()&#xa;▶ 10: [từ chối] reject(reason) / requestMoreDocs()&#xa;▶ 12: [hợp lệ] approveAndSign()" id="Y6RxJhvi-dOQ-CaqSJ1I-139">
+        <UserObject label="▶ 9: reviewRequest()&lt;br&gt;▶ 10: [Rejected] reject(reason) / requestMoreDocs()&lt;br&gt;▶ 12: [Valid] approveAndSign()" mermaidId="e:ver-&gt;lv#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.63;strokeWidth=2;" mermaidBaseValue="▶ 9: reviewRequest()&#xa;▶ 10: [từ chối] reject(reason) / requestMoreDocs()&#xa;▶ 12: [hợp lệ] approveAndSign()" id="Y6RxJhvi-dOQ-CaqSJ1I-139">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.5;entryX=0;entryY=0.63;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-124">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
@@ -213,7 +213,7 @@
             </mxGeometry>
           </mxCell>
         </UserObject>
-        <UserObject label="▶ 12.2.2: createHandoverCase(), createAssignment() per asset&#xa;◀ 16.1: closeAsset()&#xa;◀ 16.2: [mọi tài sản đã đóng] allClosed()" mermaidId="e:orch-&gt;eb#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.27;entryX=0;entryY=0.72;strokeWidth=2;" mermaidBaseValue="▶ 12.2.2: createHandoverCase(), createAssignment() per asset&#xa;◀ 16.1: closeAsset()&#xa;◀ 16.2: [mọi tài sản đã đóng] allClosed()" id="Y6RxJhvi-dOQ-CaqSJ1I-143">
+        <UserObject label="▶ 12.2.2: createHandoverCase(), createAssignment() per asset&lt;br&gt;◀ 16.1: closeAsset()&lt;br&gt;◀ 16.2: [all assets closed] allClosed()" mermaidId="e:orch-&gt;eb#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=16;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.27;entryX=0;entryY=0.72;strokeWidth=2;" mermaidBaseValue="▶ 12.2.2: createHandoverCase(), createAssignment() per asset&#xa;◀ 16.1: closeAsset()&#xa;◀ 16.2: [mọi tài sản đã đóng] allClosed()" id="Y6RxJhvi-dOQ-CaqSJ1I-143">
           <mxCell edge="1" parent="Y6RxJhvi-dOQ-CaqSJ1I-113" source="Y6RxJhvi-dOQ-CaqSJ1I-121" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=none;endArrow=none;jumpStyle=arc;jumpSize=12;strokeColor=#000000;html=1;fontSize=14;labelBackgroundColor=#cccccc;fontFamily=Recursive;fontColor=#28253D;exitX=1;exitY=0.27;entryX=0;entryY=0.72;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Y6RxJhvi-dOQ-CaqSJ1I-123">
             <mxGeometry relative="1" as="geometry">
               <Array as="points">
