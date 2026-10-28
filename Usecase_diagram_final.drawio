@@ -37,8 +37,11 @@
         <mxCell id="uE2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="Track Handover Progress" vertex="1">
           <mxGeometry height="56" width="260" x="300" y="530" as="geometry" />
         </mxCell>
-        <mxCell id="uE3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="Reject and Request Additional Documents" vertex="1">
+        <mxCell id="uE3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" value="Provide Additional Documents" vertex="1">
           <mxGeometry height="56" width="260" x="300" y="595" as="geometry" />
+        </mxCell>
+        <mxCell id="uV5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Reject and Request Additional Documents" vertex="1">
+          <mxGeometry height="56" width="260" x="620" y="650" as="geometry" />
         </mxCell>
         <mxCell id="uV1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Review Verification Request&lt;hr style=&#39;margin:4px 40px;&#39;&gt;&lt;span style=&#39;font-size:10px;&#39;&gt;extension points:&lt;br&gt;Approve&lt;br&gt;Reject&lt;/span&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="300" y="700" as="geometry" />
@@ -126,8 +129,12 @@
         <mxCell id="as9" edge="1" parent="1" source="aVeri" style="endArrow=none;html=1;" target="uV1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="as10" edge="1" parent="1" source="aVeri" style="endArrow=none;html=1;" target="uE3">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="as24" edge="1" parent="1" source="aVeri" style="endArrow=none;html=1;rounded=0;" target="uV5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="678" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="as22" edge="1" parent="1" source="aVeri" style="endArrow=none;html=1;" target="uV4">
           <mxGeometry relative="1" as="geometry" />
@@ -168,7 +175,7 @@
         <mxCell id="ext1" edge="1" parent="1" source="uV3" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=11;fontStyle=2;labelBackgroundColor=default;" target="uV1" value="«extend»&lt;br&gt;{request approved}">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ext2" edge="1" parent="1" source="uE3" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=11;fontStyle=2;labelBackgroundColor=default;" target="uV1" value="«extend»&lt;br&gt;{request rejected}">
+        <mxCell id="ext2" edge="1" parent="1" source="uV5" style="endArrow=open;endSize=10;dashed=1;html=1;fontSize=11;fontStyle=2;labelBackgroundColor=default;" target="uV1" value="«extend»&lt;br&gt;{request rejected}">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
