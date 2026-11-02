@@ -1,158 +1,395 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mxfile host="app.diagrams.net" modified="2026-10-28T05:30:00.000Z" agent="Codex" version="24.7.17" type="device" compressed="false">
+<mxfile host="Electron" agent="Codex" compressed="false">
   <diagram id="legacyvault-final" name="LegacyVault Component Diagram">
-    <mxGraphModel dx="1650" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="780" math="0" shadow="0">
+    <mxGraphModel dx="1608" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1650" pageHeight="780" math="0" shadow="0">
       <root>
-        <mxCell id="0"/><mxCell id="1" parent="0"/>
-        <mxCell id="title" value="LegacyVault — UML Component Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="475" y="10" width="700" height="36" as="geometry"/></mxCell>
-
-        <!-- LegacyVault subsystem boundary -->
-        <mxCell id="system" value="&amp;laquo;subsystem&amp;raquo;  &lt;b&gt;LegacyVault System&lt;/b&gt;" style="swimlane;html=1;rounded=0;startSize=46;horizontal=1;fillColor=#FFFFFF;swimlaneFillColor=#F3F4F6;strokeColor=#111827;strokeWidth=1.8;fontColor=#111827;fontSize=14;" vertex="1" parent="1"><mxGeometry x="260" y="60" width="1020" height="640" as="geometry"/></mxCell>
-        <mxCell id="internalLabel" value="internal structure" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#4B5563;" vertex="1" parent="1"><mxGeometry x="665" y="78" width="210" height="20" as="geometry"/></mxCell>
-
-        <!-- Client -->
-        <mxCell id="web" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Web Portal&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Owner · Executor · Beneficiary&lt;br&gt;Verifier · Admin&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="20" y="110" width="180" height="90" as="geometry"/></mxCell>
-        <mxCell id="webPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="194" y="149" width="12" height="12" as="geometry"/></mxCell>
-
-        <!-- API Gateway and five backend components -->
-        <mxCell id="gateway" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Routing · TLS · rate limiting&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=top;spacingTop=30;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="330" y="115" width="250" height="450" as="geometry"/></mxCell>
-        <mxCell id="iam" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Identity &amp;amp; Access&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Login · RBAC · sessions&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="800" y="115" width="260" height="70" as="geometry"/></mxCell>
-        <mxCell id="vault" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Vault &amp;amp; Asset&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Assets · documents · encryption&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="800" y="210" width="260" height="70" as="geometry"/></mxCell>
-        <mxCell id="dms" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;DMS &amp;amp; Handover Orchestrator&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Check-in · trigger · case orchestration&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="800" y="305" width="260" height="70" as="geometry"/></mxCell>
-        <mxCell id="legal" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Legal Verification&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Requests · document exchange · approval&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="800" y="400" width="260" height="70" as="geometry"/></mxCell>
-        <mxCell id="delivery" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Executor &amp;amp; Beneficiary&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Assignments · delivery · progress&lt;/font&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" vertex="1" parent="1"><mxGeometry x="800" y="495" width="260" height="70" as="geometry"/></mxCell>
-
-        <!-- External components and stores -->
-        <mxCell id="ekyc" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;eKYC / OTP Service&lt;/b&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="115" width="230" height="70" as="geometry"/></mxCell>
-        <mxCell id="storage" value="&lt;b&gt;Encrypted Object Storage&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Documents · payloads · backups&lt;/font&gt;" style="shape=folder;tabWidth=48;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="210" width="230" height="70" as="geometry"/></mxCell>
-        <mxCell id="notify" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Email / SMS / Push Provider&lt;/b&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="305" width="230" height="70" as="geometry"/></mxCell>
-        <mxCell id="esign" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Digital Signature / e-Notary&lt;/b&gt;" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="400" width="230" height="70" as="geometry"/></mxCell>
-        <mxCell id="db" value="&lt;b&gt;LegacyVault DB&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Users · vaults · DMS · requests · cases&lt;/font&gt;" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=14;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="495" width="230" height="70" as="geometry"/></mxCell>
-        <mxCell id="audit" value="&lt;b&gt;Audit Log Store&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Immutable state &amp;amp; access events&lt;/font&gt;" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=14;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" vertex="1" parent="1"><mxGeometry x="1360" y="610" width="230" height="70" as="geometry"/></mxCell>
-
-        <!-- System and component ports -->
-        <mxCell id="sysApiPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="254" y="149" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwApiPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="324" y="149" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwAuth" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="574" y="144" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwVault" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="574" y="239" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwDms" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="574" y="334" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwLegal" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="574" y="429" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="gwDelivery" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="574" y="524" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="iamIn" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="794" y="144" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="vaultIn" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="794" y="239" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="dmsIn" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="794" y="334" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="legalIn" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="794" y="429" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="deliveryIn" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="794" y="524" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="iamOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="144" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="vaultOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="239" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="dmsNotifyOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="334" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="dmsAuditOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="359" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="legalOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="429" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="deliveryOut" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1054" y="524" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysEkyc" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="144" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysStorage" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="239" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysNotify" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="334" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysSign" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="429" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysDb" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="524" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="sysAudit" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1274" y="639" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="ekycPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="144" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="storagePort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="239" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="notifyPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="334" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="esignPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="429" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="dbPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="524" width="12" height="12" as="geometry"/></mxCell>
-        <mxCell id="auditPort" value="" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" vertex="1" parent="1"><mxGeometry x="1354" y="639" width="12" height="12" as="geometry"/></mxCell>
-
-        <!-- Provided and required interfaces -->
-        <mxCell id="webReq" value="" style="shape=requiredInterface;html=1;direction=east;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="210" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="apiProv" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="232" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="apiName" value="ILegacyVaultAPI" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="190" y="112" width="110" height="20" as="geometry"/></mxCell>
-
-        <mxCell id="reqAuth" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="592" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provAuth" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="766" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqVault" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="592" y="235" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provVault" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="766" y="235" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqDms" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="592" y="330" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provDms" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="766" y="330" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqLegal" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="592" y="425" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provLegal" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="766" y="425" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqDelivery" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="592" y="520" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provDelivery" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="766" y="520" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="authName" value="IAuth" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="632" y="115" width="120" height="20" as="geometry"/></mxCell>
-        <mxCell id="vaultName" value="IVaultAssets" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="632" y="210" width="120" height="20" as="geometry"/></mxCell>
-        <mxCell id="dmsName" value="IHandover" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="632" y="305" width="120" height="20" as="geometry"/></mxCell>
-        <mxCell id="legalName" value="ILegalVerification" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="622" y="400" width="140" height="20" as="geometry"/></mxCell>
-        <mxCell id="deliveryName" value="IDeliveryProgress" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="622" y="495" width="140" height="20" as="geometry"/></mxCell>
-
-        <mxCell id="reqEkyc" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provEkyc" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="140" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqStorage" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="235" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provStorage" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="235" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqNotify" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="330" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provNotify" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="330" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqSign" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="425" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provSign" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="425" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqDb" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="520" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provDb" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="520" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="reqAudit" value="" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1292" y="635" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="provAudit" value="" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" vertex="1" parent="1"><mxGeometry x="1320" y="635" width="20" height="20" as="geometry"/></mxCell>
-        <mxCell id="ekycName" value="IIdentityVerification" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="115" width="105" height="18" as="geometry"/></mxCell>
-        <mxCell id="storageName" value="IEncryptedStorage" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="210" width="105" height="18" as="geometry"/></mxCell>
-        <mxCell id="notifyName" value="INotification" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="305" width="105" height="18" as="geometry"/></mxCell>
-        <mxCell id="signName" value="IDigitalSignature" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="400" width="105" height="18" as="geometry"/></mxCell>
-        <mxCell id="dbName" value="IDomainData" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="495" width="105" height="18" as="geometry"/></mxCell>
-        <mxCell id="auditName" value="IAuditLog" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" vertex="1" parent="1"><mxGeometry x="1268" y="610" width="105" height="18" as="geometry"/></mxCell>
-
-        <!-- Connector style: all solid, no arrows -->
-        <mxCell id="cWebPort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="webPort" target="webReq"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="cWebAssembly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="webReq" target="apiProv"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="cApiBoundary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="apiProv" target="sysApiPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="cApiDelegation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysApiPort" target="gwApiPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="gwAuth" target="reqAuth"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqAuth" target="provAuth"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provAuth" target="iamIn"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="gwVault" target="reqVault"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqVault" target="provVault"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provVault" target="vaultIn"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="gwDms" target="reqDms"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqDms" target="provDms"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provDms" target="dmsIn"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="gwLegal" target="reqLegal"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqLegal" target="provLegal"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provLegal" target="legalIn"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="gwDelivery" target="reqDelivery"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqDelivery" target="provDelivery"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="a15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provDelivery" target="deliveryIn"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <!-- Delegation from internal components to subsystem boundary -->
-        <mxCell id="dEkyc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="iamOut" target="sysEkyc"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="dStorage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="vaultOut" target="sysStorage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="dNotify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="dmsNotifyOut" target="sysNotify"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="dSign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="legalOut" target="sysSign"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="dDb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="deliveryOut" target="sysDb"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="dAudit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="dmsAuditOut" target="sysAudit"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1160" y="365"/><mxPoint x="1160" y="645"/></Array></mxGeometry></mxCell>
-
-        <!-- External assembly connectors -->
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysEkyc" target="reqEkyc"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqEkyc" target="provEkyc"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provEkyc" target="ekycPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysStorage" target="reqStorage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqStorage" target="provStorage"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provStorage" target="storagePort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysNotify" target="reqNotify"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqNotify" target="provNotify"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provNotify" target="notifyPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysSign" target="reqSign"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqSign" target="provSign"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provSign" target="esignPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysDb" target="reqDb"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqDb" target="provDb"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provDb" target="dbPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="sysAudit" target="reqAudit"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="reqAudit" target="provAudit"><mxGeometry relative="1" as="geometry"/></mxCell>
-        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" edge="1" parent="1" source="provAudit" target="auditPort"><mxGeometry relative="1" as="geometry"/></mxCell>
-
-        <mxCell id="legend" value="□ Port&amp;nbsp;&amp;nbsp;&amp;nbsp; ● Provided interface&amp;nbsp;&amp;nbsp;&amp;nbsp; ◖ Required interface&amp;nbsp;&amp;nbsp;&amp;nbsp; ─ Assembly / delegation connector" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#4B5563;" vertex="1" parent="1"><mxGeometry x="300" y="735" width="1050" height="22" as="geometry"/></mxCell>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#111827;" value="LegacyVault — UML Component Diagram" vertex="1">
+          <mxGeometry height="36" width="700" x="475" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="swimlane;html=1;rounded=0;startSize=46;horizontal=1;fillColor=#FFFFFF;swimlaneFillColor=#F3F4F6;strokeColor=#111827;strokeWidth=1.8;fontColor=#111827;fontSize=14;" value="&amp;laquo;subsystem&amp;raquo;  &lt;b&gt;LegacyVault System&lt;/b&gt;" vertex="1">
+          <mxGeometry height="640" width="1020" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="internalLabel" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#4B5563;" value="internal structure" vertex="1">
+          <mxGeometry height="20" width="210" x="665" y="78" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Web Portal&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Owner · Executor · Beneficiary&lt;br&gt;Verifier · Admin&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="20" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="webPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="194" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" parent="1" style="shape=component;html=1;align=center;verticalAlign=top;spacingTop=30;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;API Gateway&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Routing · TLS · rate limiting&lt;/font&gt;" vertex="1">
+          <mxGeometry height="450" width="250" x="330" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="iam" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Identity &amp;amp; Access&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Login · RBAC · sessions&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="800" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="vault" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Vault &amp;amp; Asset&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Assets · documents · encryption&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="800" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dms" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;DMS &amp;amp; Handover Orchestrator&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Check-in · trigger · case orchestration&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="800" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="legal" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Legal Verification&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Requests · document exchange · approval&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="800" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="delivery" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=12;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Executor &amp;amp; Beneficiary&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Assignments · delivery · progress&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="800" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="ekyc" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;eKYC / OTP Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" parent="1" style="shape=folder;tabWidth=48;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&lt;b&gt;Encrypted Object Storage&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Documents · payloads · backups&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Email / SMS / Push Provider&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="esign" parent="1" style="shape=component;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&amp;laquo;component&amp;raquo;&lt;br&gt;&lt;b&gt;Digital Signature / e-Notary&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=14;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&lt;b&gt;LegacyVault DB&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Users · vaults · DMS · requests · cases&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="audit" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=14;html=1;whiteSpace=wrap;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;fontColor=#111827;fontSize=11;" value="&lt;b&gt;Audit Log Store&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Immutable state &amp;amp; access events&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="230" x="1360" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="sysApiPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="254" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="gwApiPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="324" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="gwAuth" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="574" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="gwVault" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="574" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="gwDms" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="574" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="gwLegal" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="574" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="gwDelivery" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="574" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="iamIn" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="794" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="vaultIn" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="794" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="dmsIn" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="794" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="legalIn" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="794" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="deliveryIn" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="794" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="iamOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="vaultOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="dmsNotifyOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="dmsAuditOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="359" as="geometry" />
+        </mxCell>
+        <mxCell id="legalOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="deliveryOut" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1054" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="sysEkyc" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="sysStorage" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="sysNotify" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="sysSign" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="sysDb" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="sysAudit" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1274" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="ekycPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="storagePort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="239" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="334" as="geometry" />
+        </mxCell>
+        <mxCell id="esignPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="429" as="geometry" />
+        </mxCell>
+        <mxCell id="dbPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="524" as="geometry" />
+        </mxCell>
+        <mxCell id="auditPort" parent="1" style="rectangle;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.3;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="1354" y="639" as="geometry" />
+        </mxCell>
+        <mxCell id="webReq" parent="1" style="shape=requiredInterface;html=1;direction=east;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="210" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="apiProv" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="232" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="apiName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="ILegacyVaultAPI" vertex="1">
+          <mxGeometry height="20" width="110" x="190" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="reqAuth" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="592" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="provAuth" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="18" width="18" x="768" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="reqVault" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="592" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="provVault" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="766" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="reqDms" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="592" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="provDms" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="766" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="reqLegal" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="592" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="provLegal" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="766" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="reqDelivery" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="592" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="provDelivery" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="766" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="authName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="IAuth" vertex="1">
+          <mxGeometry height="20" width="120" x="632" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="vaultName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="IVaultAssets" vertex="1">
+          <mxGeometry height="20" width="120" x="632" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="dmsName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="IHandover" vertex="1">
+          <mxGeometry height="20" width="120" x="632" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="legalName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="ILegalVerification" vertex="1">
+          <mxGeometry height="20" width="140" x="622" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="deliveryName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=10;fontStyle=1;fontColor=#111827;" value="IDeliveryProgress" vertex="1">
+          <mxGeometry height="20" width="140" x="622" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="reqEkyc" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="provEkyc" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="reqStorage" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="provStorage" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="reqNotify" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="provNotify" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="reqSign" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="provSign" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="reqDb" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="provDb" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="reqAudit" parent="1" style="shape=requiredInterface;html=1;direction=west;fillColor=none;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1292" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="provAudit" parent="1" style="ellipse;html=1;aspect=fixed;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="635" as="geometry" />
+        </mxCell>
+        <mxCell id="ekycName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="IIdentityVerification" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="115" as="geometry" />
+        </mxCell>
+        <mxCell id="storageName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="IEncryptedStorage" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="notifyName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="INotification" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="signName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="IDigitalSignature" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="dbName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="IDomainData" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="495" as="geometry" />
+        </mxCell>
+        <mxCell id="auditName" parent="1" style="text;html=1;strokeColor=none;fillColor=#FFFFFF;align=center;fontSize=9;fontStyle=1;fontColor=#111827;" value="IAuditLog" vertex="1">
+          <mxGeometry height="18" width="105" x="1268" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="cWebPort" edge="1" parent="1" source="webPort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="webReq">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cWebAssembly" edge="1" parent="1" source="webReq" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="apiProv">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cApiBoundary" edge="1" parent="1" source="apiProv" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysApiPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cApiDelegation" edge="1" parent="1" source="sysApiPort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="gwApiPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="gwAuth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqAuth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="reqAuth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provAuth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="provAuth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="iamIn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="gwVault" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqVault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" edge="1" parent="1" source="reqVault" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provVault">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a6" edge="1" parent="1" source="provVault" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="vaultIn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a7" edge="1" parent="1" source="gwDms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqDms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a8" edge="1" parent="1" source="reqDms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provDms">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a9" edge="1" parent="1" source="provDms" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="dmsIn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a10" edge="1" parent="1" source="gwLegal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqLegal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a11" edge="1" parent="1" source="reqLegal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provLegal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a12" edge="1" parent="1" source="provLegal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="legalIn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a13" edge="1" parent="1" source="gwDelivery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqDelivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a14" edge="1" parent="1" source="reqDelivery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provDelivery">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a15" edge="1" parent="1" source="provDelivery" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="deliveryIn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dEkyc" edge="1" parent="1" source="iamOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysEkyc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dStorage" edge="1" parent="1" source="vaultOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysStorage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dNotify" edge="1" parent="1" source="dmsNotifyOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysNotify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dSign" edge="1" parent="1" source="legalOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysSign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dDb" edge="1" parent="1" source="deliveryOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysDb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dAudit" edge="1" parent="1" source="dmsAuditOut" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="sysAudit">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="365" />
+              <mxPoint x="1160" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="sysEkyc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqEkyc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="reqEkyc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provEkyc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="provEkyc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="ekycPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="sysStorage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqStorage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="reqStorage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provStorage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="provStorage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="storagePort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="sysNotify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqNotify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="reqNotify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provNotify">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="provNotify" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="notifyPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="sysSign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqSign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="reqSign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provSign">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="provSign" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="esignPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="sysDb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqDb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="reqDb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provDb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="provDb" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="dbPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="sysAudit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="reqAudit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="reqAudit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="provAudit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="provAudit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;strokeColor=#111827;strokeWidth=1.3;" target="auditPort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;fontSize=10;fontStyle=2;fontColor=#4B5563;" value="□ Port&amp;nbsp;&amp;nbsp;&amp;nbsp; ● Provided interface&amp;nbsp;&amp;nbsp;&amp;nbsp; ◖ Required interface&amp;nbsp;&amp;nbsp;&amp;nbsp; ─ Assembly / delegation connector" vertex="1">
+          <mxGeometry height="22" width="1050" x="300" y="735" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

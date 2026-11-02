@@ -1,6 +1,6 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="class-diagram">
-    <mxGraphModel dx="2570" dy="1565" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1816" dy="907" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -35,7 +35,7 @@
           <mxGeometry height="21" width="210" y="228" as="geometry" />
         </mxCell>
         <mxCell id="cd-21" parent="1" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#F0FDFA;whiteSpace=wrap;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="&lt;b&gt;VaultOwner&lt;/b&gt;" vertex="1">
-          <mxGeometry height="303" width="420" x="40" y="400" as="geometry" />
+          <mxGeometry height="303" width="420" x="46" y="413" as="geometry" />
         </mxCell>
         <mxCell id="cd-22" parent="cd-21" style="line;strokeWidth=2;fillColor=none;spacingLeft=3;spacingRight=3;rotatable=0;points=[];strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="24" width="420" y="57" as="geometry" />
@@ -317,7 +317,7 @@
           <mxGeometry height="24" width="300" y="162" as="geometry" />
         </mxCell>
         <mxCell id="cd-115" parent="1" style="swimlane;html=1;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;horizontal=1;childLayout=stackLayout;startSize=45;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginTop=12;marginBottom=12;stackSpacing=0;swimlaneFillColor=#FFF7ED;whiteSpace=wrap;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;strokeWidth=2;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="&lt;b&gt;ExecutorAppointment&lt;/b&gt;" vertex="1">
-          <mxGeometry height="198" width="270" x="930" y="760" as="geometry" />
+          <mxGeometry height="198" width="270" x="930" y="756" as="geometry" />
         </mxCell>
         <mxCell id="cd-116" parent="cd-115" style="text;fontSize=14;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=10;spacingRight=12;spacingBottom=2;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#28253D;fontFamily=Recursive;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" value="-AppointmentStatus status" vertex="1">
           <mxGeometry height="21" width="270" y="57" as="geometry" />
